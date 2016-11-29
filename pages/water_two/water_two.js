@@ -1,7 +1,7 @@
 Page({
   data: {
-      contains_imgo:'../../img/two.png',
-      share:'../../img/share.png',
+      contains_imgo:'http://p1.bqimg.com/580164/b16cb335a80214eat.jpg',
+      share:'http://p1.bqimg.com/580164/81823a07577f9550t.jpg',
       water_two:{
           status:'第二杯水：上午九点钟',
           clock:'微信小闹钟',

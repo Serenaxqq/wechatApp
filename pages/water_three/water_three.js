@@ -1,7 +1,7 @@
 Page({
   data: {
-      contains_imgo:'../../img/three.png',
-      share:'../../img/share.png',
+      contains_imgo:'http://p1.bqimg.com/580164/fb72c5524b12fbc9t.jpg',
+      share:'http://p1.bqimg.com/580164/81823a07577f9550t.jpg',
       water_three:{
           status:'第三杯水：中午十一点半',
           clock:'微信小闹钟',

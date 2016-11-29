@@ -1,7 +1,7 @@
 Page({
   data: {
-      contains_imgo:'../../img/eight.png',
-      share:'../../img/share.png',
+      contains_imgo:'http://p1.bqimg.com/580164/3b8b9f4e1bd19894t.jpg',
+      share:'http://p1.bqimg.com/580164/81823a07577f9550t.jpg',
       water_eight:{
           status:'第八杯水：晚上八点十五分',
           clock:'微信小闹钟',

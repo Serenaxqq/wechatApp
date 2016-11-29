@@ -1,5 +1,7 @@
 
 @import 'iconfont.wxss';
+
+
 .talk{
   background-color: #f1f0f6; 
   height: 1000rpx;
@@ -7,6 +9,7 @@
   padding: 10rpx 2%  10rpx 2%;
   box-sizing: border-box;
 }
+
 .people{margin:20rpx 0 }
 
 .headimg_other{ width:100rpx; height: 100rpx; background-color: #eeeeee; float: left; }
@@ -31,3 +34,9 @@
 
 .fasong{   width:25% ; float: left; text-align: center; }
 .fasongbtn{font-size:20rpx; width: 70%; height: 80rpx; line-height: 80rpx}
+
+.model{line-height: 60rpx; width: 200rpx; margin: 0; margin-left: 120rpx; margin-top: 20rpx}
+
+.select{width: 60rpx; height: 60rpx; margin-top: -20rpx; position: relative; top:18rpx}
+
+.picker{background-color:#f1f0f6; display: inline-block; height: 48rpx; border-radius: 4rpx  }

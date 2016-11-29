@@ -1,5 +1,6 @@
 
-@font-face {font-family: "iconfont";
+@font-face {
+  font-family: "iconfont";
   src: url('//at.alicdn.com/t/font_vo10yre1aillerk9.eot?t=1479703427946'); /* IE9*/
   src: url('//at.alicdn.com/t/font_vo10yre1aillerk9.eot?t=1479703427946#iefix') format('embedded-opentype'), /* IE6-IE8 */
   url('//at.alicdn.com/t/font_vo10yre1aillerk9.woff?t=1479703427946') format('woff'), /* chrome, firefox */

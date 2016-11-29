@@ -5,7 +5,7 @@ Page({
     reminder:[
       {
         name:'clock',
-        imgo:'../../img/clock.png',
+        imgo:'http://p1.bqimg.com/580164/c5c2c9f1ffd0ab59s.png',
         content_state_left:{data1:'7:00',data2:'闹钟'},
         content_state_center:{
           remind1:'主人,该起床罗',
@@ -13,7 +13,7 @@ Page({
         }  
       },{
         name:'dinner',
-        imgo:'../../img/dinner.png',
+        imgo:'http://p1.bqimg.com/580164/dfedd18713396b5at.jpg',
         content_state_left:{data1:'8:00',data2:'闹钟'},
         content_state_center:{
           remind1:'按时吃饭，有益身体健康',
@@ -21,7 +21,7 @@ Page({
           }
       },{
         name:'drink',
-        imgo:'../../img/drink.png',
+        imgo:'http://p1.bqimg.com/580164/57a00ed2f55027fft.jpg',
         content_state_left:{data1:'21:00',data2:'闹钟'},
         content_state_center:{
           remind1:'阅读时间看会书吧',
@@ -31,7 +31,7 @@ Page({
     ],
     jia:"../../img/jia.png",
     sendicon:'icon-audio',
-    arrow:'../../img/jian.png',
+    arrow:'http://p1.bqimg.com/580164/9928b5810428337et.jpg',
     voice:{
      imgo:'../../img/naozhong.png',
     }

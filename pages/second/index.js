@@ -1,11 +1,13 @@
 
 Page({
   data: {
-    bottom: 0
+    array: ['5分钟', '10分钟', '15分钟', '20分钟'],
+    index:0
   },
-  tapMove: function(e) {
+  bindPickerChange: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      bottom: 100000000000000
+      index: e.detail.value
     })
   }
 })

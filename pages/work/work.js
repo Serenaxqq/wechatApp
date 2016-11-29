@@ -1,7 +1,7 @@
 Page({
   data: {
-      status:'../../img/work.png',
-      share:'../../img/share.png',
+      status:'http://p1.bqimg.com/580164/ba7260e8ab0179f6t.jpg',
+      share:'http://p1.bqimg.com/580164/81823a07577f9550t.jpg',
       work:{
           data:'PM 2:00，',
           addrass:'109会议室，',

@@ -24,14 +24,10 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/clock/clock",
-      "text": "日程表",
-      "iconPath":"../../img/rcb0.png",
-      "selectedIconPath":"../../img/rcb.png"    
+      "text": "日程表"     
     }, {
       "pagePath": "pages/index/index",
-      "text": "语音闹钟",
-      "iconPath":"../../img/clock0.png",
-      "selectedIconPath":"../../img/clockt.png"
+      "text": "语音闹钟"   
     }],
     "backgroundColor":"#f8f8f8",
     "borderStyle":"white",

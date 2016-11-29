@@ -38,13 +38,10 @@
                 </button>
             </view>
             <image src="{{jia}}" bindtap="dosend" class="go"></image>
-            <view class="fasong">
-                <button type="default" wx:if="{{ipt}}"  bindtap="dosend" class="fasongbtn">发送</button>      
-            </view>
         </view>  
    </scroll-view> 
 </view>
-<!--<text bindtap="toast1" class="user-motto">早饭</text>
+<text bindtap="toast1" class="user-motto">早饭</text>
 <text bindtap="toast2" class="user-motto">工作</text>
 <text bindtap="toastz" class="user-motto">午饭</text>
 <text bindtap="toastw" class="user-motto">晚饭</text>
@@ -58,5 +55,5 @@
 <text bindtap="water_eight" class="user-motto"> eight </text>
 <text bindtap="send_quotation" class="user-motto"> sendquotation </text>
 <text bindtap="face_bow" class="user-motto"> facebow </text>
-<text bindtap="Customer" class="user-motto"> Customer </text>-->
+<text bindtap="Customer" class="user-motto"> Customer </text>
 </page>

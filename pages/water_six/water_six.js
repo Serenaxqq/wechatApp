@@ -1,7 +1,7 @@
 Page({
   data: {
-      contains_imgo:'../../img/six.png',
-      share:'../../img/share.png',
+      contains_imgo:'http://p1.bqimg.com/580164/da3a7066b4c5c907t.jpg',
+      share:'http://p1.bqimg.com/580164/81823a07577f9550t.jpg',
       water_six:{
           status:'第六杯水:下午五点半',
           clock:'微信小闹钟',
