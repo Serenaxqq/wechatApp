@@ -65,36 +65,47 @@ Page({
           "Content-Type":"application/json"
       },
       success: function(res) {
-        var arr=[];
-        var pxh=[];
+        console.log(res.data)
+        var today=[];      //当前时间  1480295929  1480422589183
+        var remind=[];
+        console.log(Date.now());
+        for(var i=0;i<res.data.length;i++){
+          remind.push(res.data[i].remind_date+' '+res.data[i].remind_time);
+        }
+        console.log(util.getLocalTime(Date.now()/1000))
+        console.log(remind)
+        
+        
+       /*var arr=[];
+        var sortAfter=[];
         var data = res.data;
-        console.log(data);
         for(var i=0;i<3;i++){
            arr.push(data[i].create_time);
         }
         arr.sort(function(a,b){
-            return a-b;            
+            return a-b;           
         }); 
         console.log(arr)
         for(var i=0;i<arr.length; i++){
-          pxh.push(util.getLocalTime(arr[i]).slice(10,17))
+          sortAfter.push(util.getLocalTime(arr[i]).slice(10,17))
         }
+        console.log(util.getLocalTime(data[1].update_time))
         _that.setData({
-          ['reminder[0].content_state_left.data1']: pxh[0],
+          ['reminder[0].content_state_left.data1']: sortAfter[0],
           ['reminder[0].content_state_left.data2']: '闹钟',
           ['reminder[0].content_state_center.remind1']: data[0].remind_content,
           ['reminder[0].content_state_center.remind2']: '每天',
 
-          ['reminder[1].content_state_left.data1']: pxh[1],
+          ['reminder[1].content_state_left.data1']: sortAfter[1],
           ['reminder[1].content_state_left.data2']: '闹钟',
           ['reminder[1].content_state_center.remind1']: data[1].remind_content,
           ['reminder[1].content_state_center.remind2']: '每天',
 
-          ['reminder[2].content_state_left.data1']: pxh[2],
+          ['reminder[2].content_state_left.data1']: sortAfter[2],
           ['reminder[2].content_state_left.data2']: '闹钟',
           ['reminder[2].content_state_center.remind1']: data[1].remind_content,
           ['reminder[2].content_state_center.remind2']: '每天',
-        })
+        })*/
       }
     });
   },
