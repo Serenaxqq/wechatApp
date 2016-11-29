@@ -1,0 +1,11 @@
+<page> 
+    <view class="contains">
+        <text class="status">{{dinner.status}}</text>
+        <text class="clock">{{dinner.clock}}</text>
+        <image class="contains_imgo" src="{{contains_imgo}}"></image>
+    </view>
+    <view class="footer">
+        <image class="share" src="{{share}}"></image>
+        <text class="content">{{content}}</text>
+    </view>
+</page>

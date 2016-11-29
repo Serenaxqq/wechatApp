@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/clock/clock",
+    "pages/index/index",
+    "pages/work/work",
+    "pages/breakfast/breakfast",
+    "pages/lunch/lunch",
+    "pages/dinner/dinner",
+    "pages/water_one/water_one",
+    "pages/water_two/water_two",
+    "pages/water_three/water_three",
+    "pages/water_four/water_four",
+    "pages/water_five/water_five",
+    "pages/water_six/water_six",
+    "pages/water_seven/water_seven",
+    "pages/water_eight/water_eight"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1b1b1f",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/clock/clock",
+      "text": "日程表",
+      "iconPath":"../../img/rcb0.png",
+      "selectedIconPath":"../../img/rcb.png"    
+    }, {
+      "pagePath": "pages/index/index",
+      "text": "语音闹钟",
+      "iconPath":"../../img/clock0.png",
+      "selectedIconPath":"../../img/clockt.png"
+    }],
+    "backgroundColor":"#f8f8f8",
+    "borderStyle":"white",
+    "selectedColor":"#12bd10"
+  }
+  
+}

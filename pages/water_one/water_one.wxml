@@ -1,0 +1,11 @@
+<page> 
+    <view class="contains">
+        <text class="status">{{drink.status}}</text>
+        <text class="clock">{{drink.clock}}</text>
+        <image class="contains_imgo" src="{{water}}"></image>
+    </view>
+    <view class="footer">
+        <image class="share" src="{{share}}"></image>
+        <text class="content">{{content}}</text>
+    </view>
+</page>

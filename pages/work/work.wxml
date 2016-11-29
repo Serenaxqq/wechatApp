@@ -1,0 +1,20 @@
+<page> 
+    <view class="contains">
+        <text class="status" style="margin-left:35rpx;">{{work.data}}</text>
+        <text class="status">{{work.addrass}}</text>
+        <text class="status">{{work.status}}</text>
+        <text class="clock">{{work.clock}}</text>
+        <image class="contains_imgo" src="{{status}}"></image>
+    </view>
+    <view class="footer">
+        <image class="share" src="{{share}}"></image>
+        <view>
+            <text class="data">时间：</text>
+            <text class="details">{{details.time}}</text>
+        </view>
+        <view>
+            <text class="data">地点：</text>
+            <text class="details">{{details.address}}</text>
+        </view>
+    </view>
+</page>
