@@ -41,7 +41,7 @@
         </view>  
    </scroll-view> 
 </view>
-<text bindtap="toast1" class="user-motto">早饭</text>
+<!--<text bindtap="toast1" class="user-motto">早饭</text>
 <text bindtap="toast2" class="user-motto">工作</text>
 <text bindtap="toastz" class="user-motto">午饭</text>
 <text bindtap="toastw" class="user-motto">晚饭</text>
@@ -52,8 +52,5 @@
 <text bindtap="water_five" class="user-motto"> five </text>
 <text bindtap="water_six" class="user-motto"> six </text>
 <text bindtap="water_seven" class="user-motto"> seven </text>
-<text bindtap="water_eight" class="user-motto"> eight </text>
-<text bindtap="send_quotation" class="user-motto"> sendquotation </text>
-<text bindtap="face_bow" class="user-motto"> facebow </text>
-<text bindtap="Customer" class="user-motto"> Customer </text>
+<text bindtap="water_eight" class="user-motto"> eight </text>-->
 </page>

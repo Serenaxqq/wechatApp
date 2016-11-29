@@ -29,11 +29,11 @@ Page({
         }
       }
     ],
-    jia:"../../img/jia.png",
+    jia:"http://p1.bqimg.com/580164/e1517f3045a870dct.jpg",
     sendicon:'icon-audio',
     arrow:'http://p1.bqimg.com/580164/9928b5810428337et.jpg',
     voice:{
-     imgo:'../../img/naozhong.png',
+     imgo:'http://p1.bqimg.com/580164/c5c2c9f1ffd0ab59s.png',
     }
   },
   //语音与输入切换
@@ -66,28 +66,19 @@ Page({
       },
       success: function(res) {
         var arr=[];
-        var Millisecond=[];//毫秒
-        var pxh=[];//排序后
+        var pxh=[];
         var data = res.data;
         console.log(data);
         for(var i=0;i<3;i++){
-          arr.push(data[i].remind_date+' '+data[i].remind_time)
+           arr.push(data[i].create_time);
         }
-        console.log(arr)
-        for(var i=0;i<arr.length;i++){
-          Millisecond.push(new Date(arr[i]).getTime()); //得到毫秒数
-        }
-        Millisecond.sort(function(a,b){                 //sort排序
+        arr.sort(function(a,b){
             return a-b;            
-        });       
-
-        console.log(Millisecond);
-        for(var i=0;i<Millisecond.length; i++){
-          pxh.push(util.getLocalTime(Millisecond[i]).slice(9,17))
+        }); 
+        console.log(arr)
+        for(var i=0;i<arr.length; i++){
+          pxh.push(util.getLocalTime(arr[i]).slice(10,17))
         }
-        //console.log(util.getLocalTime(1293072805))1480392000000
-        
-
         _that.setData({
           ['reminder[0].content_state_left.data1']: pxh[0],
           ['reminder[0].content_state_left.data2']: '闹钟',
@@ -165,21 +156,6 @@ Page({
    water_eight:function() {
     wx.navigateTo({
       url: '../water_eight/water_eight'
-    })
-   },
-   send_quotation:function() {
-    wx.navigateTo({
-      url: '../send_quotation/send_quotation'
-    })
-   },
-   face_bow:function() {
-    wx.navigateTo({
-      url: '../face_bow/face_bow'
-    })
-   },
-   Customer:function() {
-    wx.navigateTo({
-      url: '../Customer/Customer'
     })
    }
 })
