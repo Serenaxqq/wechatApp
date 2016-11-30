@@ -37,7 +37,7 @@
 }
 .content_state_left{
     float:left;
-    width:140rpx;
+    width:95rpx;
     height:100rpx;
     margin-left:20rpx;
     color:#565656;
@@ -79,7 +79,6 @@
     width:30rpx;
     height:45rpx;
     margin-top:25rpx;
-    margin-left:-16rpx;
 }
 .footer{
     width:100%;
@@ -101,7 +100,7 @@
     position:absolute;
     top:25rpx;
     left:120rpx;
-    width:450rpx;
+    width:470rpx;
     height:150rpx;
     border:1rpx solid #c2c2c2; 
     border-radius: 8rpx;  
@@ -113,6 +112,11 @@
     word-wrap:break-word; 
     word-break:break-all; 
     overflow: hidden;
+    font-size: 28rpx;
+    font-family:'微软雅黑';
+    color:#161616;
+    padding-right:5rpx;
+    padding:15rpx;
 }
 .longen .voice_o{
     display:inline-block;

@@ -3,11 +3,11 @@
    <text class="clock">闹钟提醒</text>
    <scroll-view scroll-y="true" class="content">
       <block wx:for-items="{{reminder}}" wx:for-item="reminder_list">
-        <view class="content_state">
+        <view class="content_state" wx:if="{{reminder_list.content_state_left.data1!=''}}">
             <image class="img" src="{{reminder_list.imgo}}" >
             </image>
             <view class="content_state_left">
-                <text class="data">{{reminder_list.content_state_left.data1}}</text>
+                <text class="data" bindtap='status_alert' data-index="{{index}}">{{reminder_list.content_state_left.data1}}</text>
                 <text class="alarm_clock">{{reminder_list.content_state_left.data2}}</text>
             </view>
              <view class="content_state_center">
@@ -15,7 +15,7 @@
                 <text class="every">{{reminder_list.content_state_center.remind2}}</text>
             </view> 
              <view class="content_state_right">
-                <image class="arrow" src="{{arrow}}"></image>
+                <image bindtap='jump' data-index="{{index}}" class="arrow" src="{{reminder_list.arrow}}"></image>
              </view>           
         </view>
       </block>
@@ -26,7 +26,7 @@
         <view class="longen">
             <text class="voice_o"></text>
             <text class="voice_t"></text>
-            <text class="text"></text>
+            <text class="text">{{content}}</text>
         </view>
         <view class='send'>
             <text class=' iconfont {{sendicon}}' bindtap="changeico"></text>
@@ -37,11 +37,12 @@
                 按住说话
                 </button>
             </view>
-            <image src="{{jia}}" bindtap="dosend" class="go"></image>
-        </view>  
+            <image src="{{plus}}" bindtap="dosend" class="go"></image>
+            <!--<text class='icon iconfont icon-icon'></text>-->
+        </view> 
    </scroll-view> 
 </view>
-<!--<text bindtap="toast1" class="user-motto">早饭</text>
+<text bindtap="toast1" class="user-motto">早饭</text>
 <text bindtap="toast2" class="user-motto">工作</text>
 <text bindtap="toastz" class="user-motto">午饭</text>
 <text bindtap="toastw" class="user-motto">晚饭</text>
@@ -52,5 +53,5 @@
 <text bindtap="water_five" class="user-motto"> five </text>
 <text bindtap="water_six" class="user-motto"> six </text>
 <text bindtap="water_seven" class="user-motto"> seven </text>
-<text bindtap="water_eight" class="user-motto"> eight </text>-->
+<text bindtap="water_eight" class="user-motto"> eight </text>
 </page>
